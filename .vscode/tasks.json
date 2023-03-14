@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Installing extensions and running your app...",
+      "type": "shell",
+      "command": "code-server --install-extension redhat.java --install-extension vscjava.vscode-java-debug --install-extension formulahendry.code-runner && javac HelloWorld.java && java HelloWorld",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "runOptions": { "runOn": "folderOpen" }
+    }
+  ]
+}
