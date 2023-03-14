@@ -4,10 +4,12 @@ public class mazepath {
         int sc = 0;
         int er = 2;
         int ec = 2;
-        int nop = mazepath01(sr,sc,er,ec,"");
+        // int nop = mazepath01(sr,sc,er,ec,"");
+        int nop = mazepath02(sr,sc,er,ec,"");
         System.out.println("number of paths to reach from ["+sr+","+sc+"] to ["+er+","+ec+"] is "+nop);
     }
 
+    // this a basic solution to this problem 
     private static int  mazepath01(int sr, int sc, int er, int ec, String psf) {
         if(sr==er && sc==ec){
             System.out.println(psf);
@@ -21,4 +23,10 @@ public class mazepath {
         return count;
 
     }
+    // here is the solution using vector theory 
+
+    private static int mazepath02(int sr, int sc, int er, int ec, String string) {
+        return 0;
+    }
+
 }
